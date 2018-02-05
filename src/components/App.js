@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Header from './header/Header';
 import TimelineList from './timeline/TimelineList';
 
+import '../styles/main.css';
+
 class App extends Component {
   render() {
     return (
