@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import Header from './header/Header';
 import TimelineList from './past/TimelineList';
 import Stat from './present/Stat';
+import Services from './present/Services';
+
+import VideoMP4 from '../video/pchc20-logo-reveal.mp4';
+import VideoWEBM from '../video/pchc20-logo-reveal.webm';
 
 import '../styles/main.css';
 
@@ -12,7 +16,10 @@ class App extends Component {
       <div className="App">
         <Header />
         <section id="video">
-          <div id="player"></div>
+          <video loop muted autoPlay>
+            <source src={VideoMP4} type="video/mp4" />
+            <source src={VideoWEBM} type="video/webm" />
+          </video>
         </section>
         <section id="intro">
           <h2>Twenty Years</h2>
@@ -34,27 +41,7 @@ class App extends Component {
           </div>
           <div className="services">
             <h3>Our Family of Services</h3>
-            <ul>
-              <li><a href="#">Audiology</a></li>
-              <li><a href="#">Care Management</a></li>
-              <li><a href="#">Chiropractic</a></li>
-              <li><a href="#">Community Care & Geriatrics</a></li>
-              <li><a href="#">Dental Services</a></li>
-              <li><a href="#">Family Medicine</a></li>
-              <li><a href="#">Health Care for the Homeless</a></li>
-              <li><a href="#">Laboratory Services</a></li>
-              <li><a href="#">Mental Health</a></li>
-              <li><a href="#">Nutrition</a></li>
-              <li><a href="#">Osteopathic Manipulation Therapy</a></li>
-              <li><a href="#">Pediatrics</a></li>
-              <li><a href="#">Pharmacy</a></li>
-              <li><a href="#">Podiatry</a></li>
-              <li><a href="#">Recovery</a></li>
-              <li><a href="#">Speech Therapy</a></li>
-              <li><a href="#">Walk-In Care</a></li>
-              <li><a href="#">Women's Health</a></li>
-              <li><a href="#">X-Ray</a></li>
-            </ul>
+            <Services />
           </div>
         </section>
         <section id="future">
