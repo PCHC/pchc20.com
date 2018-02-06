@@ -31,6 +31,7 @@ section {
 
   @include media-breakpoint-up($main-breakpoint) {
     padding-top: 13vw;
+    padding-top: 6vw;
   }
 }
 
@@ -49,6 +50,10 @@ p {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: calc(1rem + 0.5vw);
+
+  @include media-breakpoint-up($main-breakpoint) {
+      font-weight: 300;
+  }
 }
 
 img, svg {

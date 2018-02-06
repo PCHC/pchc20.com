@@ -1127,7 +1127,8 @@ section {
   padding: 6rem 3vw 0; }
   @media (min-width: 768px) {
     section {
-      padding-top: 13vw; } }
+      padding-top: 13vw;
+      padding-top: 6vw; } }
 
 h2, .services h3 {
   margin: 0 auto;
@@ -1143,6 +1144,9 @@ p {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: calc(1rem + 0.5vw); }
+  @media (min-width: 768px) {
+    p {
+      font-weight: 300; } }
 
 img, svg {
   max-width: 100%;
@@ -1214,7 +1218,7 @@ nav {
     nav .logo a {
       margin: 0;
       padding: 0;
-      height: 6rem;
+      height: 5rem;
       display: block;
       max-width: 15rem; }
       @media (min-width: 768px) {
@@ -1273,6 +1277,36 @@ nav {
     right: 0;
     position: absolute;
     border: 0; }
+
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch; }
+  @media (min-width: 768px) {
+    .section-intro {
+      flex-direction: row; } }
+  .section-intro__image {
+    flex: 1 0 auto;
+    background-image: url("../images/ken-nadeau.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 35% 0%;
+    height: 40vh; }
+    @media (min-width: 768px) {
+      .section-intro__image {
+        height: auto;
+        background-size: cover;
+        background-position: 0% 0%; } }
+  .section-intro__content {
+    flex: 0 1 auto;
+    text-align: justify;
+    max-width: none; }
+    @media (min-width: 768px) {
+      .section-intro__content {
+        max-width: 60%;
+        margin-left: 3rem; } }
 
 @media (min-width: 768px) {
   .timeline {
@@ -1362,6 +1396,10 @@ nav {
   color: #fff; }
   #present h2, #present .services h3, .services #present h3 {
     border-color: #fff; }
+  #present::after {
+    display: block;
+    content: "";
+    clear: both; }
 
 .stats {
   display: flex;
@@ -1386,36 +1424,58 @@ nav {
     letter-spacing: 0.05em;
     line-height: 1.15; }
 
-.services h3 {
-  font-size: calc(1rem + 2vw); }
+.services {
+  overflow: auto; }
+  .services h3 {
+    font-size: calc(1rem + 2vw); }
+  .services ul,
+  .services li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 0; }
+  .services li {
+    transition: opacity 0.15s ease-out; }
+    .services li a {
+      display: block;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.1;
+      padding: 0.75em 1em;
+      margin: 1vw;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 0.25em;
+      transition: all 0.15s ease-out; }
+      .services li a:hover {
+        text-decoration: none;
+        color: #be1e2d;
+        background: #fff; }
 
-.services ul,
-.services li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-.services ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 3vw 0; }
-
-.services li {
-  transition: opacity 0.15s ease-out; }
-  .services li a {
-    display: block;
+.section-more {
+  background: #be1e2d;
+  padding: 3vw;
+  text-align: center; }
+  .section-more a {
+    display: inline-block;
+    text-decoration: none;
     color: #fff;
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 1.1;
-    padding: 0.75em 1em;
-    margin: 1vw;
-    background: rgba(255, 255, 255, 0.1);
+    font-size: 1.25rem;
+    background: #dc2335;
+    border: 1px solid #cb2030;
+    padding: 1em 2em;
     border-radius: 0.25em;
-    transition: all 0.15s ease-out; }
-    .services li a:hover {
-      text-decoration: none;
-      color: #be1e2d;
-      background: #fff; }
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 6px 0px #921723, 0px 3px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.07s ease-out; }
+    .section-more a:hover {
+      transform: translateY(3px);
+      box-shadow: 0px 3px 0px #921723, 0px 3px 15px rgba(0, 0, 0, 0.4); }
+    .section-more a:focus {
+      transform: translateY(5px);
+      box-shadow: 0px 1px 0px #921723, 0px 3px 15px rgba(0, 0, 0, 0.4); }

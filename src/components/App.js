@@ -21,11 +21,14 @@ class App extends Component {
             <source src={VideoWEBM} type="video/webm" />
           </video>
         </section>
-        <section id="intro">
-          <h2>Twenty Years</h2>
-          <p>That's a long time. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-          <p>Integer sapien leo, vehicula sed tincidunt sed, fermentum vel massa. Integer vel turpis eu erat placerat accumsan a non urna. Etiam vehicula consectetur nulla, ac scelerisque mi pretium nec. Sed pharetra odio augue, non pellentesque nisi sollicitudin auctor. Nam elementum, mi eu pretium eleifend.</p>
-          <p>Here's to 20 more.</p>
+        <section id="intro" className="section-intro">
+          <div className="section-intro__image"></div>
+          <div className="section-intro__content">
+            <h2>Twenty Years</h2>
+            <p>That's a long time. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            <p>Integer sapien leo, vehicula sed tincidunt sed, fermentum vel massa. Integer vel turpis eu erat placerat accumsan a non urna. Etiam vehicula consectetur nulla, ac scelerisque mi pretium nec. Sed pharetra odio augue, non pellentesque nisi sollicitudin auctor. Nam elementum, mi eu pretium eleifend.</p>
+            <p>Here's to 20 more.</p>
+          </div>
         </section>
         <section id="past">
           <h2>Where We've Been</h2>
@@ -51,8 +54,8 @@ class App extends Component {
             <p>Integer sapien leo, vehicula sed tincidunt sed, fermentum vel massa. Integer vel turpis eu erat placerat accumsan a non urna. Etiam vehicula consectetur nulla, ac scelerisque mi pretium nec. Sed pharetra odio augue, non pellentesque nisi sollicitudin auctor. Nam elementum, mi eu pretium eleifend.</p>
           </div>
         </section>
-        <section id="beyond">
-          <h2>beyond</h2>
+        <section id="more" className="section-more">
+          <a href="https://pchc.com/">Learn More at PCHC.com</a>
         </section>
       </div>
     );

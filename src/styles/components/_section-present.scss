@@ -5,6 +5,12 @@
   h2 {
     border-color: #fff;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 .stats {
@@ -42,6 +48,8 @@
 }
 
 .services {
+  overflow: auto;
+  
   h3 {
     @extend h2;
     font-size: calc(1rem + 2vw);
