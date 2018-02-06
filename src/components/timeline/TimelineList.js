@@ -1,36 +1,28 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-export default class TimelineList extends Component {
+import TimelineItem from './TimelineItem';
+
+class TimelineList extends Component {
+  renderList() {
+    return this.props.timeline.map((t) => {
+      return (
+        <TimelineItem key={t.year} year={t.year} description={t.description} image={t.image} />
+      )
+    });
+  }
+
   render() {
     return (
       <div className="timeline">
-        <div className="timeline__row">
-          <div className="timeline__content">
-            <div className="timeline__content--wrap">
-              <h3>1998</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
-            </div>
-          </div>
-          <div className="timeline__image">
-            <div className="timeline__image--wrap">
-              <img src="http://via.placeholder.com/400x400" />
-            </div>
-          </div>
-        </div>
-        <div className="timeline__row">
-          <div className="timeline__content">
-            <div className="timeline__content--wrap">
-              <h3>1998</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
-            </div>
-          </div>
-          <div className="timeline__image">
-            <div className="timeline__image--wrap">
-              <img src="http://via.placeholder.com/400x400" />
-            </div>
-          </div>
-        </div>
+        { this.renderList() }
       </div>
     )
   }
 }
+
+function mapStateToProps({ timeline }) {
+  return { timeline };
+}
+
+export default connect(mapStateToProps)(TimelineList);
