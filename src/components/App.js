@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './header/Header';
 import TimelineList from './past/TimelineList';
+import Stat from './present/Stat';
 
 import '../styles/main.css';
 
@@ -26,22 +27,10 @@ class App extends Component {
         <section id="present">
           <h2>Where We Are</h2>
           <div className="stats">
-            <div className="stats__block">
-              <span className="stats__stat">65,000</span>
-              <span className="stats__label">Patients per Year</span>
-            </div>
-            <div className="stats__block">
-              <span className="stats__stat">350,000</span>
-              <span className="stats__label">Visits per Year</span>
-            </div>
-            <div className="stats__block">
-              <span className="stats__stat">16</span>
-              <span className="stats__label">Practice Locations</span>
-            </div>
-            <div className="stats__block">
-              <span className="stats__stat">750</span>
-              <span className="stats__label">Employees</span>
-            </div>
+            <Stat number="65000" duration={1} label="Patients per Year" />
+            <Stat number="350000" duration={1.5} label="Visits per Year" />
+            <Stat number="16" duration={2} label="Practice Locations" />
+            <Stat number="750" duration={2.5} label="Employees" />
           </div>
           <div className="services">
             <h3>Our Family of Services</h3>

@@ -9,12 +9,14 @@
     "opera 12"
   ],
   "dependencies": {
+    "countup.js": "^1.9.3",
     "hamburgers": "^0.9.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-scripts": "1.1.0",
+    "react-visibility-sensor": "^3.11.0",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
     "sanitize.css": "^5.0.0"
