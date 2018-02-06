@@ -21,7 +21,7 @@ class Header extends Component {
             <NavLink href="#past">The Past</NavLink>
             <NavLink href="#present">The Present</NavLink>
             <NavLink href="#future">The Future</NavLink>
-            <NavLink href="#beyond">...and Beyond</NavLink>
+            <NavLink href="#more">Learn More</NavLink>
           </ul>
         </nav>
       </header>
