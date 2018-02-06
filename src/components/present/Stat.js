@@ -6,8 +6,6 @@ class Stat extends Component {
   constructor(props) {
     super(props);
 
-    let counter = null;
-
     this.onVisibilityChange = this.onVisibilityChange.bind(this);
   }
 

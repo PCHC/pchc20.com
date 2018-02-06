@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class TimelineItem extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render () {
     const imgUrl = require(`../../images/timeline/${this.props.image}`);
     return (

@@ -11,7 +11,7 @@ export default function(state = INITIAL_STATE, action) {
         ...state,
         isExpanded: navState
       };
+    default:
+      return state;
   }
-
-  return state;
 }
