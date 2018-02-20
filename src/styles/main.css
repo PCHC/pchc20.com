@@ -1457,6 +1457,40 @@ nav {
         color: #be1e2d;
         background: #fff; }
 
+.section-future {
+  background-color: #f8e0bd;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .section-future {
+      flex-direction: row; } }
+  .section-future__image {
+    flex: 1 0 auto;
+    order: 2;
+    background-image: url("../images/pchc20-peds-patient.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: 35vh; }
+    @media (min-width: 768px) {
+      .section-future__image {
+        height: auto; } }
+  .section-future__content {
+    flex: 0 1 auto;
+    text-align: justify;
+    max-width: none;
+    padding: 3vw; }
+    @media (min-width: 768px) {
+      .section-future__content {
+        max-width: 60%; } }
+  @media (min-width: 768px) {
+    .section-future h2, .section-future .services h3, .services .section-future h3 {
+      font-size: calc(1rem + 2vw); } }
+
 .section-more {
   background: #be1e2d;
   padding: 3vw;

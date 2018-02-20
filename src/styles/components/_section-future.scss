@@ -1,0 +1,44 @@
+.section-future {
+  background-color: #f8e0bd;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+
+  @include media-breakpoint-up($main-breakpoint) {
+    flex-direction: row;
+  }
+
+  &__image {
+    flex: 1 0 auto;
+    order: 2;
+    background-image: url('../images/pchc20-peds-patient.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: 35vh;
+
+    @include media-breakpoint-up($main-breakpoint) {
+      height: auto;
+    }
+  }
+
+  &__content {
+    flex: 0 1 auto;
+    text-align: justify;
+    max-width: none;
+    padding: 3vw;
+
+    @include media-breakpoint-up($main-breakpoint) {
+      max-width: 60%;
+    }
+  }
+
+  h2 {
+    @include media-breakpoint-up($main-breakpoint) {
+      font-size: calc(1rem + 2vw);
+    }
+  }
+}

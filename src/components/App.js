@@ -47,11 +47,11 @@ class App extends Component {
             <Services />
           </div>
         </section>
-        <section id="future">
-          <div className="content--text">
+        <section id="future" className="section-future">
+          <div className="section-future__image"></div>
+          <div className="section-future__content">
             <h2>Where We're Going</h2>
             <p>Something inspirational about the future of PCHC. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            <p>Integer sapien leo, vehicula sed tincidunt sed, fermentum vel massa. Integer vel turpis eu erat placerat accumsan a non urna. Etiam vehicula consectetur nulla, ac scelerisque mi pretium nec. Sed pharetra odio augue, non pellentesque nisi sollicitudin auctor. Nam elementum, mi eu pretium eleifend.</p>
           </div>
         </section>
         <section id="more" className="section-more">
