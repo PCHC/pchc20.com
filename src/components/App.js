@@ -5,8 +5,8 @@ import TimelineList from './past/TimelineList';
 import Stat from './present/Stat';
 import Services from './present/Services';
 
-import VideoMP4 from '../video/pchc20-logo-reveal.mp4';
-import VideoWEBM from '../video/pchc20-logo-reveal.webm';
+import VideoMP4 from '../video/pchc20-logo-reveal_1080p.mp4';
+import VideoWEBM from '../video/pchc20-logo-reveal_1080p.webm';
 
 import '../styles/main.css';
 
