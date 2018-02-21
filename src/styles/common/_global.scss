@@ -27,12 +27,7 @@ a {
 }
 
 section {
-  padding: 6rem 3vw 0;
-
-  @include media-breakpoint-up($main-breakpoint) {
-    padding-top: 13vw;
-    padding-top: 6vw;
-  }
+  padding: 3vw;
 }
 
 h2 {

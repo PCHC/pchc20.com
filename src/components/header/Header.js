@@ -2,11 +2,23 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import ToggleButton from './ToggleButton';
-import NavLink from './NavLink';
+import { toggleNav } from '../../actions/index';
+
+import { Link } from 'react-scroll';
 
 import Logo from './pchc20-logo.svg';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleLinkClick = this.handleLinkClick.bind(this);
+  }
+
+  handleLinkClick(event) {
+    this.props.toggleNav(true);
+  }
+
   render() {
     return(
       <header>
@@ -14,14 +26,50 @@ class Header extends Component {
           <ToggleButton isExpanded={this.props.nav.isExpanded} />
           <ul>
             <li className="logo">
-              <a href="/">
+              <Link
+                to="root"
+                smooth="easeOutCubic"
+                onClick={this.handleLinkClick}
+              >
                 <img src={Logo} alt="PCHC20 - Twenty Years Strong" />
-              </a>
+              </Link>
             </li>
-            <NavLink href="#past">The Past</NavLink>
-            <NavLink href="#present">The Present</NavLink>
-            <NavLink href="#future">The Future</NavLink>
-            <NavLink href="#more">Learn More</NavLink>
+            <li>
+              <Link
+                to="past"
+                smooth="easeOutCubic"
+                offset={-100}
+                isDynamic={true}
+                onClick={this.handleLinkClick}
+              >The Past</Link>
+            </li>
+            <li>
+              <Link
+                to="present"
+                smooth="easeOutCubic"
+                offset={-100}
+                isDynamic={true}
+                onClick={this.handleLinkClick}
+              >The Present</Link>
+            </li>
+            <li>
+              <Link
+                to="future"
+                smooth="easeOutCubic"
+                offset={-100}
+                isDynamic={true}
+                onClick={this.handleLinkClick}
+              >The Future</Link>
+            </li>
+            <li>
+              <Link
+                to="more"
+                smooth="easeOutCubic"
+                offset={-100}
+                isDynamic={true}
+                onClick={this.handleLinkClick}
+              >Learn More</Link>
+            </li>
           </ul>
         </nav>
       </header>
@@ -33,4 +81,4 @@ function mapStateToProps({ nav }) {
   return { nav };
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, { toggleNav })(Header);

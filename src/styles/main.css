@@ -1124,11 +1124,7 @@ a:hover {
   flex-direction: column; }
 
 section {
-  padding: 6rem 3vw 0; }
-  @media (min-width: 768px) {
-    section {
-      padding-top: 13vw;
-      padding-top: 6vw; } }
+  padding: 3vw; }
 
 h2, .services h3 {
   margin: 0 auto;
@@ -1307,6 +1303,9 @@ nav {
       .section-intro__content {
         max-width: 60%;
         margin-left: 3rem; } }
+
+#past {
+  padding-bottom: 0; }
 
 .timeline {
   position: relative;
