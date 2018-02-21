@@ -4,9 +4,7 @@ import Header from './header/Header';
 import TimelineList from './past/TimelineList';
 import Stat from './present/Stat';
 import Services from './present/Services';
-
-import VideoMP4 from '../video/pchc20-logo-reveal_1080p.mp4';
-import VideoWEBM from '../video/pchc20-logo-reveal_1080p.webm';
+import Video from './video/Video';
 
 import '../styles/main.css';
 
@@ -16,10 +14,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <section id="video">
-          <video loop muted autoPlay>
-            <source src={VideoMP4} type="video/mp4" />
-            <source src={VideoWEBM} type="video/webm" />
-          </video>
+          <Video/>
         </section>
         <section id="intro" className="section-intro">
           <div className="section-intro__image"></div>

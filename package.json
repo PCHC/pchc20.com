@@ -11,6 +11,7 @@
   "dependencies": {
     "countup.js": "^1.9.3",
     "hamburgers": "^0.9.3",
+    "mobile-detect": "^1.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
