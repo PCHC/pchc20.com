@@ -20,12 +20,19 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>PCHC - Twenty Years Strong.</title>
+    <style type="text/css">
+      .loading{position:fixed;z-index:999;background:#fff;top:0;right:0;bottom:0;left:0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.loading svg{color:#2f3485;display:block;max-width:50%;height:1em;font-size:5em;line-height:1em;-webkit-animation:load-spin 2s infinite linear;animation:load-spin 2s infinite linear;overflow:visible;vertical-align:-.225em;width:1em}.loading svg,.loading svg path{fill:currentColor}@-webkit-keyframes load-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);color:#2f3485}50%{color:#be1e2d}to{-webkit-transform:rotate(1turn);transform:rotate(1turn);color:#2f3485}}@keyframes load-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);color:#2f3485}50%{color:#be1e2d}to{-webkit-transform:rotate(1turn);transform:rotate(1turn);color:#2f3485}}
+    </style>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"><p>LOADING</p></div>
+    <div id="root">
+      <div class="loading">
+        <svg aria-hidden="true" data-prefix="fas" data-icon="spinner-third" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="loading-spinner"><path fill="#ffffff" d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z" class=""></path></svg>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -4,6 +4,7 @@
   "private": true,
   "browserslist": [
     "IE 9",
+    "IE 10",
     "last 2 versions",
     "android 4",
     "opera 12"
