@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: 35% 0%;
-    height: 40vh;
+    height: 30vh;
 
     @include media-breakpoint-up($main-breakpoint) {
       height: auto;

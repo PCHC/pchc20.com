@@ -1257,13 +1257,12 @@ nav {
 #video {
   padding: 0;
   height: 0;
-  padding-top: 56.25%;
+  padding-top: 34.878%;
   position: relative;
   overflow: hidden; }
-  #video::before {
-    padding-top: 56.25%;
-    display: block;
-    content: ""; }
+  @media (min-width: 768px) {
+    #video {
+      padding-top: 56.25%; } }
   #video iframe, #video video {
     width: 100%;
     height: 100%;
@@ -1289,7 +1288,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: 35% 0%;
-    height: 40vh; }
+    height: 30vh; }
     @media (min-width: 768px) {
       .section-intro__image {
         height: auto;

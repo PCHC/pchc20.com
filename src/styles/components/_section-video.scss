@@ -1,15 +1,19 @@
 #video {
   padding: 0;
   height: 0;
-  padding-top: 56.25%;
+  padding-top: 34.878%;
   position: relative;
   overflow: hidden;
 
-  &::before {
+  @include media-breakpoint-up($main-breakpoint) {
     padding-top: 56.25%;
-    display: block;
-    content: "";
   }
+
+//  &::before {
+//    padding-top: 56.25%;
+//    display: block;
+//    content: "";
+//  }
 
   iframe, video {
     width: 100%;
