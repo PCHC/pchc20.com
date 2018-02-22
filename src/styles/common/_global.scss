@@ -55,3 +55,35 @@ img, svg {
   max-width: 100%;
   height: auto;
 }
+
+.mobile-only {
+  @include media-breakpoint-up($main-breakpoint) {
+    display: none;
+  }
+}
+
+a.color {
+  &__pchc {
+    color: $pchc-blue;
+  }
+
+  &__facebook {
+    color: $color-facebook;
+  }
+
+  &__twitter {
+    color: $color-twitter;
+  }
+
+  &__linkedin {
+    color: $color-linkedin;
+  }
+
+  &__youtube {
+    color: $color-youtube;
+  }
+
+  &__instagram {
+    color: $color-instagram;
+  }
+}

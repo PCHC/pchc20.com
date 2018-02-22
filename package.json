@@ -9,6 +9,10 @@
     "opera 12"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.3",
+    "@fortawesome/fontawesome-free-brands": "^5.0.6",
+    "@fortawesome/fontawesome-free-solid": "^5.0.6",
+    "@fortawesome/react-fontawesome": "^0.0.17",
     "countup.js": "^1.9.3",
     "hamburgers": "^0.9.3",
     "mobile-detect": "^1.4.1",

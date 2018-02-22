@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import ToggleButton from './ToggleButton';
 import { toggleNav } from '../../actions/index';
 
+import LinkIcons from '../common/LinkIcons';
+
 import { Link } from 'react-scroll';
 
 import Logo from './pchc20-logo.svg';
@@ -69,6 +71,9 @@ class Header extends Component {
                 isDynamic={true}
                 onClick={this.handleLinkClick}
               >Learn More</Link>
+            </li>
+            <li className="mobile-only nav-link-icons">
+              <LinkIcons />
             </li>
           </ul>
         </nav>

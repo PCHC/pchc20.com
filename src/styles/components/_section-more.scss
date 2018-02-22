@@ -4,9 +4,12 @@
   text-align: center;
 
   a {
+    color: #fff;
+  }
+
+  .btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
     font-size: 1.25rem;
     background: lighten($pchc-red, 7%);
     border: 1px solid lighten($pchc-red, 3%);
@@ -24,6 +27,21 @@
     &:focus {
       transform: translateY(5px);
       box-shadow: 0px 1px 0px darken($pchc-red, 10%), 0px 3px 15px rgba(0,0,0,.4);
+    }
+  }
+
+  .link-icons {
+    margin: 1rem auto 0;
+    max-width: 50%;
+
+    a {
+      font-size: 1.75rem;
+      color: rgba(#fff, 0.5);
+      transition: color 0.3s ease-out;
+
+      &:hover {
+        color: rgba(#fff, 1);
+      }
     }
   }
 }

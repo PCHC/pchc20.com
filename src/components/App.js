@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import fontawesome from '@fortawesome/fontawesome';
+import brands from '@fortawesome/fontawesome-free-brands';
+import { faGlobe } from '@fortawesome/fontawesome-free-solid';
 
 import Header from './header/Header';
 import TimelineList from './past/TimelineList';
 import Stat from './present/Stat';
 import Services from './present/Services';
 import Video from './video/Video';
+import LinkIcons from './common/LinkIcons';
 
 import '../styles/main.css';
+
+fontawesome.library.add(brands, faGlobe);
 
 class App extends Component {
   render() {
@@ -50,7 +56,8 @@ class App extends Component {
           </div>
         </section>
         <section id="more" className="section-more">
-          <a href="https://pchc.com/?utm_source=pchc20">Learn More at PCHC.com</a>
+          <a href="https://pchc.com/?utm_source=pchc20" className="btn">Learn More at PCHC.com</a>
+          <LinkIcons />
         </section>
       </div>
     );
