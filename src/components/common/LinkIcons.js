@@ -29,7 +29,7 @@ const LinkIcons = () => (
       </a>
     </li>
     <li>
-      <a target="_blank" rel="noopener noreferrer" href="https://pchc.com/" className="color__pchc" title="PCHC.com" aria-label="PCHC.com">
+      <a target="_blank" rel="noopener noreferrer" href="https://pchc.com/?utm_source=pchc20&utm_medium=icon" className="color__pchc" title="PCHC.com" aria-label="PCHC.com">
         <FontAwesomeIcon icon="globe"/>
       </a>
     </li>
