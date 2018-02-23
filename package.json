@@ -1,6 +1,21 @@
 {
   "name": "pchc20",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Website for PCHC's 20th anniversary celebration",
+  "homepage": "https://pchc20.com",
+  "author": {
+    "name": "Chris Violette",
+    "email": "cviolette@pchc.com",
+    "url": "https://pixleight.com"
+  },
+  "bugs": {
+    "url" : "https://github.com/PCHC/pchc20.com/issues",
+    "email" : "cviolette@pchc.com"
+  },
+  "repository" :{
+    "type" : "git",
+    "url" : "https://github.com/PCHC/pchc20.com.git"
+  },
   "private": true,
   "browserslist": [
     "IE 9",
