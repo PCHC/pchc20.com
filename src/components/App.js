@@ -29,9 +29,9 @@ class App extends Component {
           <div className="section-intro__image"></div>
           <div className="section-intro__content">
             <h2>Twenty Years</h2>
-              <p>Since 1998, Penobscot Community Health Care (PCHC) has been committed to improving the health and well-being of our patients and the Maine communities we serve. Our vision has always been clear – a community in which everyone has access to quality, cost effective health care regardless of circumstance, where a people are empowered to advocate for their personal goals and needs and are supported by community based resources, and where health encompasses physical and emotional wellness, personal dignity, and a sense of belonging.</p>
-              <p>Things have certainly changed in the last 20 years, whether you were one of Dr. Barbara Vereault’s first patients when we opened our doors in 1998 or if you were patient #65,000 at one of our 16 practice locations in Bangor, Brewer, Old Town, Winterport, Belfast, or Jackman, one thing has remain the same – your health is our mission.</p>
-              <p>YOU are the reason PCHC is 20 Years Strong! We’ve got lots planned for our 20th anniversary and we hope you’ll help us celebrate!</p>
+              <p>Since 1998, Penobscot Community Health Care (PCHC) has been committed to improving the health and well-being of our patients and the Maine communities we serve. Our vision has always been clear – a community in which everyone has access to quality, cost effective health care regardless of circumstance, where people are empowered to advocate for their personal goals and needs and are supported by community resources, and where health encompasses physical and emotional wellness, personal dignity, and a sense of belonging.</p>
+              <p>Over the years, PCHC has certainly seen a multitude of changes, but whether you were Dr. Barbara Vereault’s first patient when we opened our doors in 1998, or our 65,000th patient at one of our 16 practice locations in Bangor, Brewer, Old Town, Winterport, Belfast, or Jackman, the core of PCHC has remained the same — your health is our mission.</p>
+              <p>YOU are the reason PCHC is 20 Years Strong! We have a lot planned for our 20th Anniversary and we look forward to celebrating this milestone with you!</p>
           </div>
         </section>
         <section id="past">
