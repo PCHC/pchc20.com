@@ -26,9 +26,9 @@ class App extends Component {
           <div className="section-intro__image"></div>
           <div className="section-intro__content">
             <h2>Twenty Years</h2>
-            <p>That's a long time. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            <p>Integer sapien leo, vehicula sed tincidunt sed, fermentum vel massa. Integer vel turpis eu erat placerat accumsan a non urna. Etiam vehicula consectetur nulla, ac scelerisque mi pretium nec. Sed pharetra odio augue, non pellentesque nisi sollicitudin auctor. Nam elementum, mi eu pretium eleifend.</p>
-            <p>Here's to 20 more.</p>
+              <p>Since 1998, Penobscot Community Health Care (PCHC) has been committed to improving the health and well-being of our patients and the Maine communities we serve.  Our vision has always been clear – a community in which everyone has access to quality, cost effective health care regardless of circumstance, where a people are empowered to advocate for their personal goals and needs and are supported by community based resources, and where health encompasses physical and emotional wellness, personal dignity, and a sense of belonging.</p>
+              <p>Things have certainly changed in the last 20 years, whether you were one of Dr. Barbara Vereault’s first patients when we opened our doors in 1998 or if you were patient #65,000 at one of our 16 practice locations in Bangor, Brewer, Old Town, Winterport, Belfast, or Jackman, one thing has remain the same – your health is our mission.</p>
+              <p>YOU are the reason PCHC is 20 Years Strong!  We’ve got lots planned for our 20th anniversary and we hope you’ll help us celebrate!</p>
           </div>
         </section>
         <section id="past">
