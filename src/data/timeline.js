@@ -97,7 +97,7 @@ export default function() {
     },
     {
       year: 2017,
-      description: 'Hope House gains Opioid Health Home designation; Open community rapid-access Suboxone treatment begins in Brewer',
+      description: 'Welcomed Lori Dwyer, Esq. as new CEO; Open community rapid-access Suboxone treatment begins in Brewer',
       image: '2017.jpg',
     },
   ]
