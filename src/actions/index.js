@@ -7,3 +7,9 @@ export function toggleNav(onlyClose = false) {
     }
   }
 }
+
+export function setLoad() {
+  return {
+    type: 'SET_LOAD'
+  }
+}

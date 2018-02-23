@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
 import { faGlobe } from '@fortawesome/fontawesome-free-solid';
 
+import Loader from './Loader';
 import Header from './header/Header';
 import TimelineList from './past/TimelineList';
 import Stat from './present/Stat';
@@ -18,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Loader loaded={this.props.loader.loaded}/>
         <Header />
         <section id="video">
           <Video/>
@@ -65,4 +68,8 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps({ loader }) {
+  return { loader };
+}
+
+export default connect(mapStateToProps)(App);
