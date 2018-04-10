@@ -11,16 +11,28 @@
 
   &__image {
     flex: 1 0 auto;
-    background-image: url('../images/ken-nadeau.png');
+    background-image: url('../images/charles-roberts.png');
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position: 35% 0%;
+    background-position: 50% 0%;
     height: 30vh;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 75%;
+      background: linear-gradient(rgba(#fff, 0), rgba(#fff, 1));
+    }
 
     @include media-breakpoint-up($main-breakpoint) {
       height: auto;
-      background-size: cover;
-      background-position: 0% 0%;
+      background-size: contain;
+      background-position: 50% 100%;
     }
   }
 
