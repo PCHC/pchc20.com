@@ -28,6 +28,7 @@ class Video extends Component {
 
       function checkLoad() {
         if(video.readyState === 4) {
+          // eslint-disable-next-line
           setLoad;
         } else {
           setTimeout(checkLoad, 100);
