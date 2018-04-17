@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import fontawesome from '@fortawesome/fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
-import { faGlobe } from '@fortawesome/fontawesome-free-solid';
+import { faGlobe, faChevronRight, faTimes } from '@fortawesome/fontawesome-free-solid';
 
 import Loader from './Loader';
 import Header from './header/Header';
@@ -14,7 +14,7 @@ import LinkIcons from './common/LinkIcons';
 
 import '../styles/main.css';
 
-fontawesome.library.add(brands, faGlobe);
+fontawesome.library.add(brands, faGlobe, faChevronRight, faTimes);
 
 class App extends Component {
   render() {

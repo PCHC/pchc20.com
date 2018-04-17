@@ -7,7 +7,7 @@ class TimelineList extends Component {
   renderList() {
     return this.props.timeline.map((t) => {
       return (
-        <TimelineItem key={t.year} year={t.year} description={t.description} image={t.image} />
+        <TimelineItem key={t.year} year={t.year} description={t.description} image={t.image} details={t.details} />
       )
     });
   }

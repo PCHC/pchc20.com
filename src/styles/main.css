@@ -1446,6 +1446,89 @@ nav {
         .timeline__content h3 {
           text-align: left; } }
 
+.ReactModal__Body--open {
+  overflow: hidden; }
+
+.ReactModal__Overlay {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.ReactModal__Content {
+  max-width: 90%;
+  max-height: 90%;
+  min-width: 60%;
+  overflow: hidden;
+  border: none;
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.ReactModal__Title {
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid #eceff1;
+  font-size: 2rem;
+  font-weight: 200; }
+
+.ReactModal__Button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  background: #2f3485;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.75em;
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(0.22, 0.61, 0.36, 1) background; }
+  .ReactModal__Button:hover {
+    background: #4047b6; }
+  .ReactModal__Button--close {
+    font-size: 1.2rem;
+    border-radius: 0 0 0.25rem 0.25rem; }
+
+.ReactModal__Details {
+  overflow: hidden; }
+
+.TimelineDetails__Content {
+  display: flex; }
+
+.TimelineDetails__Images {
+  flex: 0 0 50%;
+  padding: 1rem; }
+
+.TimelineDetails__Text {
+  padding: 1rem;
+  overflow: auto; }
+
+.TimelineDetails__Images--more {
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .TimelineDetails__Images--more > img {
+    flex-basis: 18%;
+    padding: 0.5rem 0; }
+
 #present {
   background: #2f3485;
   color: #fff; }
