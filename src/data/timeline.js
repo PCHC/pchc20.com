@@ -1,9 +1,20 @@
+import details1997 from './details/1997';
+
 export default function() {
   return [
     {
       year: 1997,
       description: 'PCHC incorporated and Board of Directors formed',
       image: '1997.jpg',
+      details: {
+        images: [
+          'https://placeimg.com/640/480/animals',
+          'https://placeimg.com/640/480/tech',
+          'https://placeimg.com/640/480/people',
+          'https://placeimg.com/640/480/architecture',
+        ],
+        text: details1997,
+      },
     },
     {
       year: 1998,
