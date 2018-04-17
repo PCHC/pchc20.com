@@ -56,7 +56,7 @@ class TimelineItem extends Component {
         </div>
         <div className="timeline__image">
           <div className="timeline__image--wrap">
-            <img src={imgUrl} alt={this.props.year} />
+            <img src={imgUrl} alt={this.props.year} onClick={this.openModal} />
           </div>
         </div>
         {this.props.details ?

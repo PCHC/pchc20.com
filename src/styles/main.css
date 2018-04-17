@@ -1527,7 +1527,8 @@ nav {
   justify-content: space-between; }
   .TimelineDetails__Images--more > img {
     flex-basis: 18%;
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0;
+    cursor: pointer; }
 
 #present {
   background: #2f3485;
