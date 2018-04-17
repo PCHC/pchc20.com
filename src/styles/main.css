@@ -1410,6 +1410,8 @@ nav {
       border: 0.5rem solid #fff;
       box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
       transition: all 0.15s ease-out; }
+    .timeline__image--has-details {
+      cursor: pointer; }
     @media (min-width: 768px) {
       .timeline__image {
         position: relative;
@@ -1436,8 +1438,14 @@ nav {
       font-size: calc(1rem + 2vh);
       font-weight: 300;
       margin: 1em 0 0.25em; }
-    .timeline__content p {
-      text-align: justify; }
+    .timeline__content p, .timeline__content__description {
+      text-align: justify;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: calc(1rem + 0.5vw); }
+      @media (min-width: 768px) {
+        .timeline__content p, .timeline__content__description {
+          font-weight: 300; } }
     @media (min-width: 768px) {
       .timeline__content {
         padding: 3rem;
@@ -1507,15 +1515,20 @@ nav {
     border-radius: 0 0 0.25rem 0.25rem;
     min-height: 3rem; }
 
-.ReactModal__Details {
-  overflow: hidden; }
-
 .TimelineDetails__Content {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  overflow: auto; }
+  @media (min-width: 768px) {
+    .TimelineDetails__Content {
+      flex-direction: row;
+      overflow: hidden; } }
 
 .TimelineDetails__Images {
-  flex: 0 0 50%;
-  padding: 1rem; }
+  padding: 1rem 1rem 0 1rem; }
+  @media (min-width: 768px) {
+    .TimelineDetails__Images {
+      flex: 0 0 50%; } }
 
 .TimelineDetails__Text {
   padding: 1rem;

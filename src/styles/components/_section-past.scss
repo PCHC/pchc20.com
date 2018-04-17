@@ -88,6 +88,10 @@
       transition: all 0.15s ease-out;
     }
 
+    &--has-details {
+      cursor: pointer;
+    }
+
     @include media-breakpoint-up($main-breakpoint) {
       position: relative;
       z-index: 1;
@@ -123,8 +127,16 @@
       margin: 1em 0 0.25em;
     }
 
-    p {
+    p,
+    &__description {
       text-align: justify;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: calc(1rem + 0.5vw);
+
+      @include media-breakpoint-up($main-breakpoint) {
+          font-weight: 300;
+      }
     }
 
     @include media-breakpoint-up($main-breakpoint) {
@@ -213,20 +225,26 @@
       min-height: 3rem;
     }
   }
-
-  &__Details {
-    overflow: hidden;
-  }
 }
 
 .TimelineDetails {
   &__Content {
     display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    @include media-breakpoint-up($main-breakpoint) {
+      flex-direction: row;
+      overflow: hidden;
+    }
   }
 
   &__Images {
-    flex: 0 0 50%;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+
+    @include media-breakpoint-up($main-breakpoint) {
+      flex: 0 0 50%;
+    }
   }
 
   &__Text {

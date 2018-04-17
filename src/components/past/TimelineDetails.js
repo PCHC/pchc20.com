@@ -33,6 +33,14 @@ class TimelineDetails extends Component {
     });
   }
 
+  renderDetailsText() {
+    return this.props.details.text.map((t) => {
+      return(
+        <p>{t}</p>
+      );
+    });
+  }
+
   render () {
     return(
       <div className="ReactModal__Details TimelineDetails__Content">
@@ -44,7 +52,9 @@ class TimelineDetails extends Component {
           </div>
         </div>
         : null }
-        <div className="TimelineDetails__Text" dangerouslySetInnerHTML={ {__html: this.props.details.text} } />
+        <div className="TimelineDetails__Text">
+          {this.renderDetailsText()}
+        </div>
       </div>
     )
   }

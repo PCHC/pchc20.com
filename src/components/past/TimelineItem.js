@@ -30,6 +30,14 @@ class TimelineItem extends Component {
     this.setState({modalIsOpen: false});
   }
 
+  renderDescription() {
+    return this.props.description.map((d) => {
+      return(
+        <p>{d}</p>
+      );
+    });
+  }
+
   render () {
     const imgUrl = require(`../../images/timeline/${this.props.image}`);
     return (
@@ -37,7 +45,9 @@ class TimelineItem extends Component {
         <div className="timeline__content">
           <div className="timeline__content--wrap">
             <h3>{this.props.year}</h3>
-            <p>{this.props.description}</p>
+            <div className="timeline__content__description">
+              {this.renderDescription()}
+            </div>
             {this.props.details ?
               <button onClick={this.openModal} className="ReactModal__Button">Learn More <FontAwesomeIcon icon="chevron-right"/></button>
             : null }
@@ -45,7 +55,7 @@ class TimelineItem extends Component {
         </div>
         <div className="timeline__image">
           <div className="timeline__image--wrap">
-            <img src={imgUrl} alt={this.props.year} onClick={this.openModal} />
+            <img src={imgUrl} alt={this.props.year} onClick={this.openModal} className={this.props.details ? 'timeline__image--has-details' : null } />
           </div>
         </div>
         {this.props.details ?
@@ -58,7 +68,7 @@ class TimelineItem extends Component {
             overlayClassName="modal--overlay"
           >
             <h3 className="ReactModal__Title" ref={subtitle => this.subtitle = subtitle}>{this.props.year}</h3>
-            <TimelineDetails details={this.props.details} />
+            <TimelineDetails details={this.props.details} year={this.props.year} />
             <button className="ReactModal__Button ReactModal__Button--close" onClick={this.closeModal}><FontAwesomeIcon icon="times"/> Close</button>
           </Modal>
         : null }
