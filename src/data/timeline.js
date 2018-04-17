@@ -20,6 +20,9 @@ export default function() {
       year: 1998,
       description: 'Opened at 992 Union Street in Bangor with 6 exam rooms',
       image: '1998.jpg',
+      details: {
+        text: '<p>A lot less text here, and no images.</p><p>Just a few more details.</p>',
+      }
     },
     {
       year: 1999,
