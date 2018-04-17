@@ -1504,7 +1504,8 @@ nav {
     background: #4047b6; }
   .ReactModal__Button--close {
     font-size: 1.2rem;
-    border-radius: 0 0 0.25rem 0.25rem; }
+    border-radius: 0 0 0.25rem 0.25rem;
+    min-height: 3rem; }
 
 .ReactModal__Details {
   overflow: hidden; }
@@ -1525,9 +1526,11 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .TimelineDetails__Images--more > img {
-    flex-basis: 18%;
-    padding: 0.5rem 0;
+
+.TimelineDetails__Thumb {
+  flex-basis: 18%;
+  padding: 0.5rem 0; }
+  .TimelineDetails__Thumb img {
     cursor: pointer; }
 
 #present {

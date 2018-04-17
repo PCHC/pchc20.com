@@ -210,6 +210,7 @@
     &--close {
       font-size: 1.2rem;
       border-radius: 0 0 0.25rem 0.25rem;
+      min-height: 3rem;
     }
   }
 
@@ -240,12 +241,15 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+  }
 
-      > img {
-        flex-basis: 18%;
-        padding: 0.5rem 0;
-        cursor: pointer;
-      }
+  &__Thumb {
+    flex-basis: 18%;
+    padding: 0.5rem 0;
+
+    img {
+      cursor: pointer;
     }
   }
 }

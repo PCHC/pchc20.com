@@ -26,7 +26,9 @@ class TimelineDetails extends Component {
     return this.props.details.images.map((i) => {
       c++;
       return (
-        <img key={c} src={i} alt={`${c}`} onClick={this.handleImageClick}/>
+        <div className="TimelineDetails__Thumb">
+          <img src={i} alt={`${c}`} onClick={this.handleImageClick}/>
+        </div>
       );
     });
   }
