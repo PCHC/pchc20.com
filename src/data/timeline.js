@@ -1,5 +1,3 @@
-import details1997 from './details/1997';
-
 export default function() {
   return [
     {
@@ -8,15 +6,6 @@ export default function() {
         'PCHC incorporated and Board of Directors formed',
       ],
       image: '1997.jpg',
-      details: {
-        images: [
-          'https://placeimg.com/640/480/animals',
-          'https://placeimg.com/640/480/tech',
-          'https://placeimg.com/640/480/people',
-          'https://placeimg.com/640/480/architecture',
-        ],
-        text: details1997,
-      },
     },
     {
       year: 1998,
@@ -54,6 +43,19 @@ export default function() {
         'Clinic is named Penobscot Community Health Center and hires the first pharmacist',
       ],
       image: '2003.jpg',
+      details: {
+        images: [
+          'https://placeimg.com/640/480/animals',
+          'https://placeimg.com/640/480/tech',
+          'https://placeimg.com/640/480/people',
+          'https://placeimg.com/640/480/architecture',
+        ],
+        text: [
+          'Podiatry and Dental services begin',
+          'Mobile Dental Clinic hits the road!',
+          'PCHC staff clinic at Penobscot Job Corps',
+        ]
+      }
     },
     {
       year: 2004,
@@ -121,7 +123,8 @@ export default function() {
     {
       year: 2008,
       description: [
-        'Brewer Community Clinic opens, and PCHC earns Joint Commission accreditation',
+        'Brewer Community Clinic opens',
+        'PCHC earns Joint Commission accreditation',
       ],
       image: '2008.jpg',
       details: {
@@ -154,16 +157,43 @@ export default function() {
     {
       year: 2010,
       description: [
-        'Audiology and Speech Therapy at the Warren Center opens, Brewer Medical Center opens, and a shelter and clinic open at the Hope House',
+        'Audiology and Speech Therapy at the Warren Center opens',
+        'Brewer Medical Center opens',
+        'Shelter and clinic open at the Hope House',
       ],
       image: '2010.jpg',
+      details: {
+        text: [
+          'Brewer Medical Center opens (Stillwater Family Medicine, Extended Care Services, and Brewer Community Clinic merged into one large practice)',
+          'Audiology, Speech Therapy, and Physical therapy begins',
+          'Medical Records, Referrals, and Call Center consolidated into old Stillwater Family Medicine building',
+          'Dental practice opens at Helen Hunt Health Center',
+          'Key Clinic opens',
+          'Hope House and Eastern Maine AIDS Network join',
+          'Earned our first Human Equality Index LGBTQ Provider Award',
+          'All physician practices earn recognition as Patient Centered Medical Homes from NCQA',
+          'Care Management program begins',
+          'Physical Therapy integrated into practices at Brewer Medical Center and PCHCtr',
+          'Administration moves to Auburn Hall building on Maine Avenue, Bangor',
+        ],
+      },
     },
     {
       year: 2011,
       description: [
-        'PCHC receives a $3 million HRSA Teaching Health Center grant; Pediatric Dental, Community Pharmacy, and Nurse Practitioner residency programs start',
+        'PCHC receives a $3 million HRSA Teaching Health Center grant',
+        'Pediatric Dental, Community Pharmacy, and Nurse Practitioner residency programs start',
       ],
       image: '2011.jpg',
+      details: {
+        text: [
+          'Dental expands to 46 operatories',
+          'Pediatric Dental, Community Pharmacy, and Nurse Practitioner Residency programs begin',
+          'PCHC becomes first certified Primary Care Medical Home by the Joint Commission in Maine',
+          'General Practice Residency recognized by HRSA as one of the first 11 Teaching Health Centers in the US',
+          'Reaccredited by the Joint Commission',
+        ],
+      },
     },
     {
       year: 2012,
@@ -171,13 +201,34 @@ export default function() {
         'Unlimited Solutions Clubhouse opens on Summer Street in Bangor.',
       ],
       image: '2012.jpg',
+      details: {
+        text: [
+          'Unlimited Solutions Clubhouse and Diabetes Center open',
+          'First full time podiatrist hired',
+          'All three residency programs double in size',
+          'Quality Management department is created',
+          'New health center and dental operatory open at Brewer Community School',
+        ],
+      },
     },
     {
       year: 2013,
       description: [
-        'Seaport Community Health Center joins PCHC; Orthodontics program begins at Dental Center; Moved billing, records, and referrals departments to Services Center on Odlin Road in Bangor',
+        'Seaport Community Health Center joins PCHC',
+        'Orthodontics program begins at Dental Center',
+        'Moved billing, records, and referrals departments to Services Center on Odlin Road in Bangor',
       ],
       image: '2013.jpg',
+      details: {
+        text: [
+          'Dental Center begins providing orthodontics',
+          'Extended Care Services expands and is renamed Community Care and Geriatrics',
+          'Seaport Community Health Center opens',
+          'Walk-In Care offered in Bangor, Brewer, Old Town and at Penobscot Pediatrics',
+          'PCHC named one of 30 exemplar practices in the US by Robert Wood Johnson Foundation',
+          'Services Center opens – billing, medical records, and referrals',
+        ],
+      },
     },
     {
       year: 2014,
@@ -185,27 +236,64 @@ export default function() {
         'Winterport Community Health Center and Jackman Community Health Center join PCHC',
       ],
       image: '2014.jpg',
+      details: {
+        text: [
+          'Winterport Community Health Center and Jackman Community Health Center opens',
+          'New Seaport Community Health Center building opens',
+          'Participated in MaineCare ACO and Anthem Shared Savings Program for first time',
+        ],
+      },
     },
     {
       year: 2015,
       description: [
-        'Led initiation of state-wide MaineCare and Medicare Accountable Care Organization; a new clinic and 24 more Transitional Housing beds open at Hope House',
+        'Led initiation of state-wide MaineCare and Medicare Accountable Care Organization',
+        'A new clinic and 24 more Transitional Housing beds open at Hope House',
       ],
       image: '2015.jpg',
+      details: {
+        text: [
+          'Hope House Health & Living Center opens ',
+          'Pharmacy and Physical Therapy begins at Seaport Community Health Center',
+          'Dental offers Oral Surgery',
+          'Board approved a clinical integration plan with St. Joseph’s Healthcare',
+          'Community Care Partnership of Maine ACO begins',
+          'Received accreditation from Accreditation Association for Ambulatory Health Care',
+        ],
+      },
     },
     {
       year: 2016,
       description: [
-        'Downeast School Dental Clinic opens; Oral surgery starts at Dental Center; and Chiropractic Services begin in Bangor and Brewer',
+        'Downeast School Dental Clinic opens',
+        'Oral surgery starts at Dental Center',
+        'Chiropractic Services begin in Bangor and Brewer',
       ],
       image: '2016.jpg',
+      details: {
+        text: [
+          'Chiropractic services begin at PCHCtr and Brewer Medical Center',
+          'Recovery services expand significantly at PCHCtr, Brewer Medical Center, Seaport Community Health Center and Hope House',
+          'Downeast School Dental Clinic opens',
+          'Hepatitis C program begins at Seaport Community Health Center',
+        ],
+      },
     },
     {
       year: 2017,
       description: [
-        'Welcomed Lori Dwyer, Esq. as new CEO; Open community rapid-access Suboxone treatment begins in Brewer',
+        'Welcomed Lori Dwyer, Esq. as new CEO',
+        'Open community rapid-access Suboxone treatment begins in Brewer',
       ],
       image: '2017.jpg',
+      details: {
+        text: [
+          'Chiropractic services started at Helen Hunt Health Center',
+          'Brewer Medical Center Rapid, Open Community Access Suboxone treatment facility opens',
+          'Helen Hunt Health Center walk-in care doubled in size',
+          'Ken Schmidt retires, Lori Dwyer, Esq. hired as new President and CEO',
+        ],
+      },
     },
   ]
 }
