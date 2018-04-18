@@ -44,12 +44,12 @@ export default function() {
       ],
       image: '2003.jpg',
       details: {
-        images: [
-          'https://placeimg.com/640/480/animals',
-          'https://placeimg.com/640/480/tech',
-          'https://placeimg.com/640/480/people',
-          'https://placeimg.com/640/480/architecture',
-        ],
+        //images: [
+          //'https://placeimg.com/640/480/animals',
+          //'https://placeimg.com/640/480/tech',
+          //'https://placeimg.com/640/480/people',
+          //'https://placeimg.com/640/480/architecture',
+        //],
         text: [
           'Podiatry and Dental services begin',
           'Mobile Dental Clinic hits the road!',
