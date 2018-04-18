@@ -67,7 +67,7 @@ class TimelineItem extends Component {
             className="modal--content"
             overlayClassName="modal--overlay"
           >
-            <h3 className="ReactModal__Title" ref={subtitle => this.subtitle = subtitle}>{this.props.year}</h3>
+            <h3 className="ReactModal__Title" ref={subtitle => this.subtitle = subtitle}>More Highlights from {this.props.year}</h3>
             <TimelineDetails details={this.props.details} year={this.props.year} />
             <button className="ReactModal__Button ReactModal__Button--close" onClick={this.closeModal}><FontAwesomeIcon icon="times"/> Close</button>
           </Modal>
