@@ -49,7 +49,7 @@ class TimelineItem extends Component {
               {this.renderDescription()}
             </div>
             {this.props.details ?
-              <button onClick={this.openModal} className="ReactModal__Button">Learn More <FontAwesomeIcon icon="chevron-right"/></button>
+              <button onClick={this.openModal} className="ReactModal__Button">More Highlights from {this.props.year} <FontAwesomeIcon icon="chevron-right"/></button>
             : null }
           </div>
         </div>
