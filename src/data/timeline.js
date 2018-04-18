@@ -41,6 +41,7 @@ export default function() {
       year: 2003,
       description: [
         'Clinic is named Penobscot Community Health Center and hires the first pharmacist',
+        'Podiatry and Dental Services begin',
       ],
       image: '2003.jpg',
       details: {
@@ -51,7 +52,6 @@ export default function() {
           //'https://placeimg.com/640/480/architecture',
         //],
         text: [
-          'Podiatry and Dental services begin',
           'Mobile Dental Clinic hits the road!',
           'PCHC staff clinic at Penobscot Job Corps',
         ]
